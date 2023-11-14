@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Déploiement d'un site web sur Azure</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <div class="page1">
+            <h1>Les étapes suivies pour effectuer le déploiement d'un site web sur Azure</h1><br>
+            <p>Pour déployer un site web statique sur Azure, vous avez besoin :</p><br>
+            <div>
+                <li>Un abonnement Azure actif</li><br>
+                <li>Nous avons besoin des fichiers et dossiers de notre site web</li><br>
+                <li>Nous avons besoin d'installer Microsoft Azure Storage Explorer sur notre machine</li>
+            </div><br>
+            <div>
+                <li ><strong class="l">étape1</strong> Création d'un groupe de ressources</li><br>
+                <p class="pt">J'ai créé un groupe de ressources en allant dans le portail Azure et en cliquant sur "Créer une ressource" dans <br><br>
+                    le coin supérieur gauche. J'ai sélectionné "Groupe de ressources" dans la liste des catégories. Ensuite, j'ai donné <br><br>
+                    un nom au groupe de ressources et j'ai choisi la région où je voulais le créer.</p><br>
+                <li><strong class="l">étape2</strong> création de storage account </li><br>
+                <p  class="pt">dans le groupe de ressources que j'ai créé précédemment J'ai sélectionné (Storage account) pour créer un compte 
+                   de stockage,<br><br> j'ai rempli les détails du formulaire, tels que le nom du compte de stockage, l'emplacement, le niveau 
+                   de performance, </p><br>
+                <p>voici un example</p><br>
+                <img src="Capture.PNG" alt="configuration"><br><br>
+                <p class="pt">j'ai ensuite configuré les paramètres avancés et réseau en sélectionnant les options appropriées,Pour les paramètres avancés,<br><br> 
+                    j'ai configuré des options telles que l'accès public, la configuration IP et les règles de pare-feu, après la configuration j'ai cliqué sur creat pour 
+                    <br><br>créer le compte de stockage,Une fois que le compte de stockage est créé, nous pouvons l'utiliser pour héberger le site web.</p><br>
+                <li ><strong class="l">étape3</strong></li> <br>
+                <p>Une fois que j'ai créé mon compte de stockage, j'ai accédé au menu de gestion de données dans le portail Azure et j'ai sélectionné l'option <br><br> "Web statique" 
+                    dans le menu de gauche,Cette option m'a permis de configurer mon compte de stockage pour héberger un site web statique.</p><br>
+                <p>voici un example</p><br><br>
+                <img src="2.PNG" alt="configuration"><br><br>
+                <li ><strong class="l">étape4</strong></li><br>
+                <p class="pt">J'ai téléchargé mon site web statique en utilisant Microsoft Azure Storage Explorer. Après m'être connecté à mon compte de stockage Azure, j'ai<br><br> accédé au conteneur de stockage (blob container)
+                     créé pour héberger mon site web. Ensuite, j'ai cliqué sur le bouton "Uploader" dans la barre<br><br> d'outils et j'ai sélectionné les fichiers de mon site web à télécharger. Une fois le téléchargement terminé,
+                     j'ai vérifié que mon site web <br><br> était en ligne en accédant à l'URL de point de terminaison fournie dans le menu "Web statique" de mon compte de stockage. </p>
+                    
+            </div>
+
+        </div>
+  
+    </body>
+
+
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
